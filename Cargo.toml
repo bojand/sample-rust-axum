@@ -4,5 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-axum = {version = "0.5" }
+askama = "0.10"
+axum = {version = "0.6" }
+serde = "1.0.152"
 tokio = { version = "1.0", features = ["full"] }

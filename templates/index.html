@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axum demo</title>
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Axum demo</h1>
+    </header>
+
+    <h3>About</h3>
+    <br>
+    <p>
+        DigitalOcean <a href="https://www.digitalocean.com/products/app-platform/">App Platform</a> demo in Rust using <a href="https://github.com/tokio-rs/axum">Axum</a> framework.
+    </p>
+    <p>
+        <a href="https://github.com/bojand/sample-rust-axum">GitHub</a>
+    </p>
+    
+    <h3>Usage</h3>
+    <br>
+    <pre>http POST \
+    '{{ public_url }}/hello' \
+    name=foo
+
+http POST \
+    '{{ public_url }}/hello' \
+    name=Bar \
+    greeting=Hi
+
+http GET \
+    '{{ public_url }}/headers'</pre>
+    <br>
+</body>
+
+</html>
